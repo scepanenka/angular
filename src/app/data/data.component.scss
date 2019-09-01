@@ -1,9 +1,30 @@
-.even {
-  color: chocolate;
-  background-color: rgb(236, 222, 204)
+.frameworks {
+  margin: 10px;
+
+  .even {
+    color: rgb(71, 30, 0);
+    background-color: rgb(177, 255, 223)
+  }
+
+  .odd {
+    color: gold;
+    background-color: #333;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px;
+  }
 }
 
-.odd {
-  color: cadetblue;
-  background-color: rgb(231, 218, 176);
+.lorem {
+  font-size: 1.5rem;
+}
+
+.hello {
+  margin: 10px;
+}
+
+.invisible {
+  display: none;
 }

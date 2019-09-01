@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataComponent implements OnInit {
   message: string;
-  items = ["Angular", "React", "Vue", "Bootstrap","Node.js"]
+  items = ["Angular", "React", "Vue", "Bootstrap","Node.js"];
   isCollapsed: boolean = true;
+  visibility: boolean = false;
+  text: string = "";
   constructor() {
     setInterval( ()=> {this.message = new Date().toLocaleTimeString()}, 1000
     )
@@ -18,9 +20,10 @@ export class DataComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
-  ngOnInit() {
+  toogleFrameworks() {
+    this.visibility = !this.visibility;
   }
 
-
-
+  ngOnInit() {
+  }
 }
