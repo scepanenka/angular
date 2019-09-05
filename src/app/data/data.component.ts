@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DataComponent implements OnInit {
   message: string;
   items = ["Angular", "React", "Vue", "Bootstrap","Node.js"];
-  isCollapsed: boolean = true;
-  visibility: boolean = false;
+  isCollapsed: boolean = false;
+  visibility: boolean = true;
   text: string = "";
   constructor() {
     setInterval( ()=> {this.message = new Date().toLocaleTimeString()}, 1000
